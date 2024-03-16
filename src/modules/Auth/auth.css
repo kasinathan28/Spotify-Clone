@@ -1,15 +1,107 @@
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.authmain {
+    height: 100%;
+    background: linear-gradient(to bottom, #a7a7a7, #121212);
+  }
+  
 .auth_container{
     width: 734px;
     border-radius: 8px;
-    height: 966px;
+    height: 800px;
     margin: 32px auto 0px auto;
-    background: #000;
+    background: #121212;
 }
 
 .heading{
-    padding: 80px 0px;
     display: flex;
+    height: auto;
+    width: 100%;
     color: #fff;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
+.heading h1{
+    font-family: "Poppins", sans-serif;
+    margin-top: 80px;
+    font-size: 44px;
+    letter-spacing: normal;
+}
+
+.cta {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    justify-content: center;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  
+  .cta button {
+    display: flex; /* Ensure button contents are displayed as flex */
+    align-items: center; /* Align button contents vertically */
+    justify-content: center; /* Center button contents horizontally */
+    width: 60%;
+    padding: 16px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #333;
+    color: #fff;
+    font-weight: 400; /* Remove "px" from font-weight value */
+    background: #121212;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta img {
+    width: 20px;
+    margin-right: 30px; /* Add margin between image and button label */
+  }
+  
+  .cta #phone{
+    filter: invert(100%);
+  }
+
+
+  .login_form_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+  }
+ 
+  .login_form{
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .login_form label {
+    margin-right: auto;
+    margin-left: 30px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  
+  .login_form input {
+    padding: 14px; 
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px; /* Add margin below each input field */
+    border: 1px solid #333; /* Add border to input fields */
+    border-radius: 8px; /* Add border-radius to input fields */
+    font-size: 16px;
+    background: #121212;
+  }
+  
