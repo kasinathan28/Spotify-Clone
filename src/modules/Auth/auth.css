@@ -1,0 +1,15 @@
+.auth_container{
+    width: 734px;
+    border-radius: 8px;
+    height: 966px;
+    margin: 32px auto 0px auto;
+    background: #000;
+}
+
+.heading{
+    padding: 80px 0px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
