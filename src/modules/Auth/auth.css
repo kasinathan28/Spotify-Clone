@@ -1,147 +1,204 @@
-
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Base styles */
 .authmain {
-    padding-bottom: 40px;
-    background: linear-gradient(to bottom, #a7a7a7, #121212);
-    height: auto;
-}
-  
-.auth_container{
-    width: 734px;
-    border-radius: 8px;
-    height: auto;
-    margin: 32px auto 100px auto;
-    background: linear-gradient(to bottom, #121212, #121212);
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom, #a7a7a7 1%, #121212);
+  height: auto;
 }
 
-.heading{
-    display: flex;
-    height: auto;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.heading h1{
-    font-family: "Poppins", sans-serif;
-    margin-top: 80px;
-    font-size: 44px;
-    letter-spacing: normal;
+.auth_container {
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 734px; /* Added max-width for larger screens */
+  border-radius: 8px;
+  margin: 32px auto 100px auto;
+  background: linear-gradient(to bottom, #121212, #121212);
 }
 
+.heading {
+  display: flex;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading h1 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 80px;
+  font-size: 44px;
+  letter-spacing: normal;
+}
+
+/* CTA section */
 .cta {
-    width: 70%;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    border-bottom: 1px solid #333;
-    justify-content: center;
-    padding-bottom: 50px;
-    flex-direction: column;
-  }
-  
-  .cta button {
-    display: flex; /* Ensure button contents are displayed as flex */
-    align-items: center; /* Align button contents vertically */
-    justify-content: center; /* Center button contents horizontally */
-    width: 60%;
-    padding: 16px 20px;
-    margin: 5px;
-    font-size: 16px;
-    border: 1px solid #333;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  justify-content: center;
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+
+.cta button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  max-width: 300px; /* Added max-width for larger screens */
+  padding: 16px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: 1px solid #333;
+  color: #fff;
+  font-weight: 400;
+  background: #121212;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta img {
+  width: 20px;
+  margin-right: 30px;
+}
+
+.cta #phone {
+  filter: invert(100%);
+}
+
+/* Login form section */
+.login_form_container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.login_form {
+  width: 75%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form label {
+  margin-right: auto;
+  margin-left: 50px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.login_form input {
     color: #fff;
-    font-weight: 400; /* Remove "px" from font-weight value */
-    background: #121212;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta img {
-    width: 20px;
-    margin-right: 30px; /* Add margin between image and button label */
-  }
-  
-  .cta #phone{
-    filter: invert(100%);
-  }
+  padding: 14px;
+  margin: auto;
+  width: 75%; /* Adjusted width for responsiveness */
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #121212;
+}
+
+.login_form input:active {
+    border-color: 1px solid #1ed760;
+}
+
+/* Remember me section */
+.remember_me {
+  width: 60%;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.remember_me input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+.remember_me label {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Button styling */
+.login_form_container button {
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid #666;
+  border-radius: 50px;
+  padding: 16px 60px;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 300px; /* Added max-width for larger screens */
+  background: #1ed760;
+}
+
+.login_form_container p {
+  text-align: center;
+  padding: 40px;
+  text-decoration: underline;
+  color: #a7a7a7;
+}
+
+/* Footer section */
+.lastdiv {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.lastdiv h3 {
+  font-weight: 400;
+  color: #666;
+}
+
+.lastdiv span {
+  color: #fff;
+  text-decoration: underline;
+}
 
 
-  .login_form_container {
-    width: 75%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    padding-top: 50px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-  }
- 
-  .login_form{
-    width: 70%;
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .login_form label {
-    margin-right: auto;
-    margin-left: 30px;
-    font-weight: 500;
-    margin-bottom: 12px;
-    color: #fff;
-  }
-  
-  .login_form input {
-    padding: 14px; 
-    margin: auto;
-    width: 80%;
-    margin-bottom: 10px; /* Add margin below each input field */
-    border: 1px solid #333; /* Add border to input fields */
-    border-radius: 8px; /* Add border-radius to input fields */
-    font-size: 16px;
-    background: #121212;
-  }
-  
 
+@media screen and (max-width:768px) {
+    .authmain{
+        padding: 0px;
+    }
+}
+@media  screen and (max-width:768px) {
+    .auth_container{
+        margin: 0px;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .auth_container h1{
+        margin: 0px;
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+    .cta button{
+        width: 90%;
+        padding: 20px;
+    }
+}
 
-  .remember_me {
-    width: 40%;
-    margin: auto;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .remember_me input[type='checkbox'] {
-    margin-right: 10px; /* Adjust margin-right for spacing */
-  }
-  
-  .remember_me label {
-    font-size: 14px;
-    color: #666;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: auto; /* Move the label to the left side */
-  }
-  
-
-
-  .login_form_container button{
-    margin: auto;
-    margin-top: 40px;
-    border-radius: 50px;
-    padding: 16px 60px;
-    width: 40%;
-    background: #1ed760;
-  }
-
-  .login_form_container a{
-    text-align: center;
-    padding: 40px;
-    color: #a7a7a7;
-  }
+@media screen and(max-width:768px) {
+    .login_form_container button{
+        padding: 10px 15px;
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import "./auth.css";
 
-import Switch from "@mui/material/Switch"; // Import Switch from Material-UI
+import { Switch } from '@mui/material'; // Import Switch from Material-UI
 
 // Images
 import google from "./assets/google.png";
@@ -55,7 +55,10 @@ function Auth() {
             <label htmlFor="remember_me_checkbox">Remember Me</label>
           </div>
           <button>Log in</button>
-          <a href="#" >Forgot your password?</a>
+          <p>Forgot your password?</p>
+        </div>
+        <div className="lastdiv">
+          <h3>Don't have an account? <span>Sign up</span> </h3>
         </div>
       </div>
     </div>
