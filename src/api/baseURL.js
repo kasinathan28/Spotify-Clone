@@ -1,1 +1,1 @@
-export const BASEURL = 'https://spotify-server-dcbn.onrender.com'
+export const BASEURL = 'http://localhost:5000'
