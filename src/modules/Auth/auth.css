@@ -1,18 +1,18 @@
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 /* Base styles */
 .authmain {
   padding-bottom: 40px;
   background: linear-gradient(to bottom, #a7a7a7 1%, #121212);
-  height: auto;
 }
 
 .auth_container {
-  width: 90%; /* Adjusted width for responsiveness */
-  max-width: 734px; /* Added max-width for larger screens */
+  width: 90%;
+  max-width: 734px;
   border-radius: 8px;
-  margin: 32px auto 100px auto;
+  margin: 32px auto 20px auto;
   background: linear-gradient(to bottom, #121212, #121212);
 }
 
@@ -35,8 +35,9 @@
 
 /* CTA section */
 .cta {
-  width: 100%;
+  width: 80%;
   display: flex;
+  margin: auto;
   align-items: center;
   border-bottom: 1px solid #333;
   justify-content: center;
@@ -49,7 +50,7 @@
   align-items: center;
   justify-content: center;
   width: 60%;
-  max-width: 300px; /* Added max-width for larger screens */
+  max-width: 300px;
   padding: 16px 20px;
   margin: 5px;
   font-size: 16px;
@@ -101,10 +102,10 @@
 }
 
 .login_form input {
-    color: #fff;
+  color: #fff;
   padding: 14px;
   margin: auto;
-  width: 75%; /* Adjusted width for responsiveness */
+  width: 75%; 
   margin-bottom: 10px;
   border: 1px solid #333;
   border-radius: 8px;
@@ -143,8 +144,8 @@
   border: 1px solid #666;
   border-radius: 50px;
   padding: 16px 60px;
-  width: 100%; /* Adjusted width for responsiveness */
-  max-width: 300px; /* Added max-width for larger screens */
+  width: 100%; 
+  max-width: 300px;
   background: #1ed760;
 }
 
@@ -158,8 +159,9 @@
 /* Footer section */
 .lastdiv {
   width: 90%;
-  height: 100px;
+  height: auto;
   margin: auto;
+  padding-bottom: 20px;
   justify-content: center;
   text-align: center;
 }
@@ -196,10 +198,17 @@
         width: 90%;
         padding: 20px;
     }
+    
 }
 
 @media screen and(max-width:768px) {
     .login_form_container button{
         padding: 10px 15px;
+    }
+    .login_form {
+      width: 100%;
+    }
+    .login_form input{
+      width: 100%;
     }
 }

@@ -14,7 +14,6 @@ function Auth() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  
   const handleUserLogin = async () => {
     try {
       const response = await Login(username, password);
