@@ -20,21 +20,21 @@ function Auth() {
   const [loading, setLoading] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
 
+
   const handleUserLogin = async () => {
     if (!username || !password) {
       setShowWarning(true);
-      setTimeout(() => setShowWarning(false), 2000); // Hide warning after 3 seconds
+      setTimeout(() => setShowWarning(false), 2000);
       return;
     }
     
     setLoading(true);
     try {
-      const response = await Login(username, password);
-      console.log(response.message);
-      if (response.message === "Login success") {
-        navigate("/index");
+      const userId = await Login(username, password);
+      if (userId) {
+        navigate(`/index/${userId}`);
       } else {
-        console.log(response.message);
+        console.log("User ID not found in response");
       }
     } catch (error) {
       console.error("Error during login:", error);
@@ -42,6 +42,7 @@ function Auth() {
       setLoading(false);
     }
   };
+  
 
   const handleGoogleLoginSuccess = (response) => {
     console.log("Google login success:", response);
@@ -50,7 +51,6 @@ function Auth() {
 
   const handleGoogleLoginFailure = (error) => {
     console.error("Google login failure:", error);
-    // Handle Google login failure
   };
 
 
