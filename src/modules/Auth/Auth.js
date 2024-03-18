@@ -72,12 +72,14 @@ function Auth() {
           >
             <GoogleLoginButton />
           </LoginSocialGoogle>
+
           {/* <button className="facebook_btn">
             <img src={Facebook} alt="facebook" /> Continue With Facebook
           </button>
           <button className="phone_btn">
             <img src={Phone} alt="Phone" id="phone" /> Continue With Phone
           </button> */}
+
         </div>
 
 
