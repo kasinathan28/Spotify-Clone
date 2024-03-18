@@ -10,7 +10,7 @@ import Facebook from "./assets/facebook.png";
 import Phone from "./assets/phone.png";
 import { GoogleLoginButton } from "react-social-login-buttons";
 import { LoginSocialGoogle } from "reactjs-social-login";
-import FacebookLogin from 'react-facebook-login';
+
 
 
 function Auth() {
