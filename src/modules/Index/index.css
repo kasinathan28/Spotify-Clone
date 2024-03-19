@@ -2,6 +2,7 @@ body{
     color: #fff;
     background: #000;
     padding: 10px;
+    scroll-behavior: smooth;
 }
 
 .index-page{
@@ -10,7 +11,7 @@ body{
 }
 
 .left{
-    width: 500px;
+    width: 400px;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -19,7 +20,7 @@ body{
 .home{
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 6px 10px;
     background: #121212;
     border-radius: 10px;
 }
@@ -29,6 +30,11 @@ body{
     height: 30px;
     padding: 10px;
 }
+
+.home .icon:hover{
+    cursor: pointer;
+}
+
 .home #search{
     font-weight: 200;
 }
@@ -37,18 +43,112 @@ body{
     display: flex;
     align-items: center;
 }
+
 .home .opt p{
     font-weight: 700;
     margin-left: 20px;
 }
 
+.home  input{
+    padding: 6px 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.home input:active{
+    border: 1px solid red;
+}
 
 .playlist{
     width: 100%;
     border-radius: 10px;
-    height: 770px;
+    height: 780px;
     padding: 10px;
     background: #121212;
+}
+
+.playlist p{
+    font-size: 18px;
+    font-weight:700;
+    color: #666;
+}
+.playlist .head{
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.playlist .category {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    gap: 10px;
+    overflow-x: scroll;
+}
+  
+.playlist .category::-webkit-scrollbar {
+    height: 1px;
+}
+
+.playlist .category::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+
+.playlist .category .cat{
+    padding:4px  12px;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    font-weight: 600;
+    flex-shrink: 0;
+    background: #66666657;
+}
+
+.play-search{
+    height: 20px;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    align-items: center;
+}
+
+.play-search .search2{
+    width: 20px;
+    display: flex;
+    height: 20px;
+}
+  
+.playlist .search-bar {
+    width: 0;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: width 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.playlist .search-bar input[type="text"] {
+    width: 100%;
+    background: none; 
+    border: none;
+}
+
+.playlist .search-bar.visible {
+    width: 300px;
+    background: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .right{
