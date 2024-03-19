@@ -1,3 +1,59 @@
 body{
     color: #fff;
+    background: #000;
+    padding: 10px;
+}
+
+.index-page{
+    display: flex;
+    gap: 30px;
+}
+
+.left{
+    width: 500px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.home{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #121212;
+    border-radius: 10px;
+}
+
+.home .icon{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.home #search{
+    font-weight: 200;
+}
+
+.home .opt{
+    display: flex;
+    align-items: center;
+}
+.home .opt p{
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+
+.playlist{
+    width: 100%;
+    border-radius: 10px;
+    height: 770px;
+    padding: 10px;
+    background: #121212;
+}
+
+.right{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background: #121212;
 }

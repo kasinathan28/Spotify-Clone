@@ -12,14 +12,12 @@ import { GoogleLoginButton } from "react-social-login-buttons";
 import { LoginSocialGoogle } from "reactjs-social-login";
 
 
-
 function Auth() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
-
 
   const handleUserLogin = async () => {
     if (!username || !password) {
@@ -42,7 +40,6 @@ function Auth() {
       setLoading(false);
     }
   };
-  
 
   const handleGoogleLoginSuccess = (response) => {
     console.log("Google login success:", response);
@@ -52,7 +49,6 @@ function Auth() {
   const handleGoogleLoginFailure = (error) => {
     console.error("Google login failure:", error);
   };
-
 
   return (
     <div className="authmain">
@@ -79,10 +75,8 @@ function Auth() {
           <button className="phone_btn">
             <img src={Phone} alt="Phone" id="phone" /> Continue With Phone
           </button> */}
-
+        
         </div>
-
-
 
         <div className="login_form_container">
           <div className="login_form">
